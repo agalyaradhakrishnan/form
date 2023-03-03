@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(0, 0, 0) ;
+}
+.log h1{
+font-size: 30px;
+color: white;
+}
+#form{
+    min-width: 80%;
+    padding: auto;
+   background:linear-gradient( rgb(145, 125, 241),rgb(128, 184, 247));
+}
+.form-control{
+   width: 80%;
+    position: relative;
+}
+#fname-f,#lname-f,#mail-f,#num-f,#address-f,#pincode-f,#district-f,#state-f{
+    display: block;
+    min-width: 100%;
+    border: 2px solid gray ;
+    background: transparent;
+    padding:7px 0px;
+    position: relative;
+    margin: 10px;
+    margin-left: 75px;
+   background-color: white;
+  }
+#fname-l,#lname-l,#mail-l,#num-l,#address-l,#pincode-l,#district-l,#state-l{
+display: block;
+margin: 10px;
+padding:10px ;
+color: black;
+margin-left: 75px;
+
+}
+#fname-f:focus,#lname-f:focus,#mail-f:focus,#num-f:focus,#address-f:focus,#pincode-f:focus,#district-f:focus,#state-f:focus{
+outline: none;
+}
+#f-err,#l-err,#mail-err,#num-err,#address-err,#pincode-err,#district-err,#state-err{
+position: absolute;
+top: 100%;
+
+left: 10px;
+color: red;
+margin: 1px;
+margin-left: 70px;
+
+}
+.form-1 #gend-l,.check #lang-l{
+    display: block;
+    padding: 10px;
+    color: black;
+    margin: 10px;
+    margin-left: 75px;
+
+}
+.form-1 #gend-f,.check #lang-f{
+    margin-left: 20px;
+    padding-left:10px; 
+    margin-left: 75px;
+
+}
+.su{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: rgb(33, 99, 7);
+    color: white;
+    width: 30%;
+    margin: 10px;
+    padding: 5px;
+   border-radius: 20px;
+}
+@media(max-width:768px){
+    .log h1{
+        font-size: 25px;
+        }
+    #fname-f,#lname-f,#mail-f,#num-f,#address-f,#pincode-f,#district-f,#state-f{
+        margin-left: 10px;
+       background-color: white;
+      }
+    #fname-l,#lname-l,#mail-l,#num-l,#address-l,#pincode-l,#district-l,#state-l{
+    margin-left: 10px;
+    }
+    #f-err,#l-err,#mail-err,#num-err,#address-err,#pincode-err,#district-err,#state-err{
+        margin-left: 10px;      
+    }
+    .form-1 #gend-l,.check #lang-l{
+        margin-left: 10px;
+    }
+    .form-1 #gend-f,.check #lang-f{
+        margin-left: 10px;
+    }
+    button{
+        padding: 5px;
+    }
+}
+@media(max-width:768px){
+    .log h1{
+        font-size: 20px;
+    }
+    #fname-f,#lname-f,#mail-f,#num-f,#address-f,#pincode-f,#district-f,#state-f{
+        margin-left: 10px;
+       background-color: white;
+      }
+    #fname-l,#lname-l,#mail-l,#num-l,#address-l,#pincode-l,#district-l,#state-l{
+    margin-left: 10px;
+    }
+    #f-err,#l-err,#mail-err,#num-err,#address-err,#pincode-err,#district-err,#state-err{
+        margin-left: 10px;      
+    }
+    .form-1 #gend-l,.check #lang-l{
+        margin-left: 10px;
+    }
+    .form-1 #gend-f,.check #lang-f{
+        margin-left: 10px;
+    }
+    button{
+        padding: 5px;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+        <div class="log">
+            <h1><b>FORM VALIDATION</b></h1>
+        </div>
+        <form id="form"  name="myform" >
+           <div class="form-control">
+            <label for="" id="fname-l">Firstname</label>
+            <input type="text" id="fname-f" onkeyup="validatefname()" required>
+            <small id="f-err"></small>
+           </div>
+           <div class="form-control">
+            <label for="" id="lname-l">Lastname</label>
+            <input type="text" id="lname-f" onkeyup="validatelname()"required>
+            <small id="l-err"></small>
+           </div>
+           <div class="form-control">
+            <label for="" id="mail-l">Email</label>
+            <input type="email" id="mail-f"  onkeyup="validatemail()"required>
+            <small id="mail-err"></small>
+           </div>
+           <div class="form-control">
+            <label for="" id="num-l">Phone no</label>
+            <input type="number" id="num-f"   onkeyup="validatenum()"required>
+            <small id="num-err"></small>
+           </div>
+           <div class="form-control">
+
+            <label for=" " id="address-l"> Address</label>
+            <input type="text" id="address-f" onkeyup="validateaddress()"required>
+            <small id="address-err"></small>
+
+        </div>
+        <div class="form-control">
+
+            <label for=" " id="pincode-l"> Pincode</label>
+            <input type="number" id="pincode-f" onkeyup="validatepincode()"required>
+            <small id="pincode-err"></small>
+
+        </div>
+        <div class="form-control">
+
+            <label for=" " id="district-l"> District</label>
+            <input type="text" id="district-f" onkeyup="validatedistrict()"required>
+            <small id="district-err"></small>
+
+        </div>
+        <div class="form-control">
+
+            <label for=" " id="state-l"> State</label>
+            <select name="state" id="state-f"  oninput="validatestate()"required>
+                <option value="-1" ></option>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Andra">Andra</option>
+                <option value="karnataka">karnataka</option>
+            </select>
+                <small id="state-err"></small>
+
+
+        </div>
+        <div class="check" id="che">
+
+            <label for="" id="lang-l"> Language</label>
+            
+            <input type="checkbox" value="Tamil"    id="lang-f" name="check" >Tamil
+            <input type="checkbox" value="English"   id="lang-f" name="check" >English
+            <input type="checkbox" value="Malayalam"   id="lang-f" name="check" >Malayalam
+            <input type="checkbox" value="Telungu"    id="lang-f" name="check" >Telungu
+            <small id="lang-err"></small>
+       
+
+
+        </div>
+        <div class="form-1">
+            <label for="" id="gend-l">Gender</label>
+           <input type="radio" id="gend-f"   name="gender" value="male">Male
+
+
+           <input type="radio" id="gend-f" name="gender" value="Female" >Female
+
+       </div>
+       <div class="su">
+       <button>Submit</button>
+    </div>
+        </form>
+
+     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
